@@ -1,3 +1,4 @@
+# 아래와 같이 작성하면 kustomize- 요렇게 이름설정됨
 namePrefix: kustomize-
 
 resources:
