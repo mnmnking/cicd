@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sample
+  name: nginx
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sample
+      app: nginx
   template:
     metadata:
       labels:
-        app: sample
+        app: nginx
     spec:
       containers:
-      - image: ghcr.io/kmaster8/sample:1.0
-        name: sample
+      - image: docker.io/jongik0217/myweb:1.0
+        name: nginx
         ports:
-        - containerPort: 5000
+        - containerPort: 80
