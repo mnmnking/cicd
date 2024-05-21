@@ -13,7 +13,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: docker.io/jongik0217/myweb:1.0
+      - image: docker.io/jongik0217/myweb:2.0
         name: nginx
         ports:
         - containerPort: 80
